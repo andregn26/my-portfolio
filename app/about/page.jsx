@@ -6,6 +6,8 @@ import profilePic from "@/public/images/profile/developer-pic-2.jpg";
 import { useRef, useEffect } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 export const metadata = {
 	title: "AG | About Me",
@@ -107,6 +109,9 @@ const About = () => {
 				<div>
 					<Skills />
 				</div>
+
+				<Experience />
+				<Education />
 			</div>
 		</>
 	);
