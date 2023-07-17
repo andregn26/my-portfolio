@@ -9,12 +9,6 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import TransitionEffect from "@/components/TransitionEffect";
 
-// export const metadata = {
-// 	title: "AG | About Me",
-// 	description:
-// 		"Explore my professional journey, skills, and hobbies. Discover my stack of technologies and get to know me better as a developer. Dive into my experience, projects, and passions. Let's connect and collaborate for future opportunities.",
-// };
-
 const AnimatedNumbers = ({ value }) => {
 	const ref = useRef(null);
 	const motionValue = useMotionValue(0);
