@@ -5,10 +5,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-import { AnimatePresence } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import { useId } from "react";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 
