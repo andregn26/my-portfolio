@@ -1,11 +1,6 @@
 import AnimatedText from "@/components/AnimatedText";
 import React from "react";
 
-// export const metadata = {
-// 	title: "AG | Projects",
-// 	description: "E.",
-// };
-
 const Projects = () => {
 	return (
 		<>
