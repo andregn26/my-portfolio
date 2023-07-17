@@ -14,7 +14,10 @@ const Details = ({ type, time, schoolLink, place, info }) => {
 				whileInView={{ y: 0 }}
 				transition={{ duration: 0.5, type: "spring" }}>
 				<h3 className="capitalize font-bold text-2xl ">
-					<a href={schoolLink} target="_blank" className="text-primary capitalize">
+					<a
+						href={schoolLink}
+						target="_blank"
+						className="text-primary dark:text-primaryDark capitalize">
 						{type}&nbsp;
 					</a>
 				</h3>
