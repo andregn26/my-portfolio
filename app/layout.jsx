@@ -10,8 +10,6 @@ import { usePathname } from "next/navigation";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 
 export default function RootLayout({ children, className = "" }) {
-	const path = usePathname();
-
 	return (
 		<html lang="en">
 			<body className={`font-mont bg-light dark:bg-dark text-dark dark:text-light`}>
