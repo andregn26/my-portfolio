@@ -17,7 +17,7 @@ export default function Home() {
 		<>
 			<TransitionEffect />
 			{/* MAIN CONTAINER */}
-			<div className="flex items-center justify-center w-full mt-8 sm:pt-8 md:pt-16 lg:flex-col min-h-screen">
+			<div className=" flex min-h-[calc(100vh-64px)] items-center justify-center w-full  lg:flex-col ">
 				{/* IMAGE CONTAINER */}
 				<div className="w-1/2 md:w-full">
 					<Image
@@ -27,6 +27,14 @@ export default function Home() {
 						alt="andre_gregorio_profile_pic"
 						className="w-[80%] h-auto lg:hidden md:inline-block md:w-full"
 					/>
+					<div className="w-[80%] md:w-full lg:hidden">
+						<h4 className="text-right text-sm font-normal italic">
+							My portrait by the eyes of Henri Rousseau
+						</h4>
+						<p className="text-right text-xs font-extralight mt-1 italic">
+							Created using Midjourney AI
+						</p>
+					</div>
 				</div>
 				{/* TEXT CONTAINER */}
 				<div className="w-1/2 flex flex-col items-center  self-center lg:w-full">

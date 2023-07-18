@@ -112,13 +112,21 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 	return (
 		<nav className={`${className} flex items-center flex-col justify-center`}>
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/" title="Home" />
-			<CustomMobileLink toggleMenu={handleClickMenu} href="/about" title="About" />
-			<CustomMobileLink toggleMenu={handleClickMenu} href="/projects" title="Projects" />
+			<CustomMobileLink
+				toggleMenu={handleClickMenu}
+				href="/about"
+				title="About"
+			/>
+			<CustomMobileLink
+				toggleMenu={handleClickMenu}
+				href="/projects"
+				title="Projects"
+			/>
 		</nav>
 	);
 };
 
-export const Navbar = () => {
+export const Navbar = ({ className = "" }) => {
 	const [mode, setMode] = useThemeSwitcher();
 	const [isOpen, setIsOpen] = useState(false);
 	const handleClickMenu = () => {
@@ -127,12 +135,15 @@ export const Navbar = () => {
 
 	return (
 		<>
-			<header className="w-full px-32 lg:px-24 md:px-16 sm:px-8 py-8 font-medium flex items-center justify-between absolute top-0 left-0">
+			<header className={`${className}`}>
 				<div className="flex justify-between w-full items-center">
 					{/* LEFT SIDE */}
 					<div className="flex lg:justify-between lg:w-full gap-2">
 						<Logo className="flex items-center justify-center" />
-						<MenuIcon handleClickMenu={handleClickMenu} isOpen={isOpen} />
+						<MenuIcon
+							handleClickMenu={handleClickMenu}
+							isOpen={isOpen}
+						/>
 					</div>
 
 					{/* CENTER */}
@@ -150,19 +161,32 @@ export const Navbar = () => {
 							<SocialMediaIcon href="https://github.com/andregn26">
 								<InstagramIcon />
 							</SocialMediaIcon>
-							<ThemeButton mode={mode} setMode={setMode} />
+							<ThemeButton
+								mode={mode}
+								setMode={setMode}
+							/>
 						</nav>
 					</div>
 					{/* PAGES NAVIGATION  MOBILE*/}
 					{isOpen ? (
 						<motion.div
-							initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-							transition={{ ease: "easeOut", duration: 0.4 }}
+							initial={{
+								scale: 0,
+								opacity: 0,
+								x: "-50%",
+								y: "-50%",
+							}}
+							transition={{
+								ease: "easeOut",
+								duration: 0.4,
+							}}
 							animate={{ scale: 1, opacity: 1 }}
 							className="bg-dark/90 dark:bg-light/75
 				min-w-[70vw] rounded-lg backdrop-blur-md py-32
 				flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-							<NavlinksMobile handleClickMenu={handleClickMenu} />
+							<NavlinksMobile
+								handleClickMenu={handleClickMenu}
+							/>
 							{/* SOCIAL MEDIA NAVIGATION & THEME SWITCHER */}
 							<nav className="flex items-center justify-center flex-wrap gap-2 sm:gap-1 mt-2">
 								<motion.a
@@ -189,7 +213,10 @@ export const Navbar = () => {
 									className="w-6 h-auto">
 									<InstagramIcon />
 								</motion.a>
-								<ThemeButton mode={mode} setMode={setMode} />
+								<ThemeButton
+									mode={mode}
+									setMode={setMode}
+								/>
 							</nav>
 						</motion.div>
 					) : null}
