@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "@/public/images/profile/developer-pic-1.png";
+import profilePic from "@/public/images/profile/ai-profile-pic.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -17,7 +17,7 @@ export default function Home() {
 		<>
 			<TransitionEffect />
 			{/* MAIN CONTAINER */}
-			<div className="flex items-center justify-center w-full pt-0 sm:pt-8 md:pt-16 lg:flex-col min-h-screen">
+			<div className="flex items-center justify-center w-full mt-8 sm:pt-8 md:pt-16 lg:flex-col min-h-screen">
 				{/* IMAGE CONTAINER */}
 				<div className="w-1/2 md:w-full">
 					<Image
@@ -25,7 +25,7 @@ export default function Home() {
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
 						src={profilePic}
 						alt="andre_gregorio_profile_pic"
-						className="w-full h-auto lg:hidden md:inline-block md:w-full"
+						className="w-[80%] h-auto lg:hidden md:inline-block md:w-full"
 					/>
 				</div>
 				{/* TEXT CONTAINER */}
@@ -35,9 +35,10 @@ export default function Home() {
 						className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
 					/>
 					<p className="my-4 text-base font-medium md:text-sm sm:text-xs lg:text-center">
-						As a skilled full-stack developer, I am dedicated to turning ideas into
-						innovative web applications. Explore my latest projects and articles,
-						showcasing my expertise in React.js and web development.
+						As a skilled full-stack developer, I am dedicated to
+						turning ideas into innovative web applications.
+						Explore my latest projects and articles, showcasing
+						my expertise in React.js and web development.
 					</p>
 					<div className="flex items-center self-start mt-2 lg:self-center">
 						<Link
