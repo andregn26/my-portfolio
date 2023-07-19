@@ -19,9 +19,9 @@ const About = () => {
 					text="Passion Fuels Purpose!"
 				/>
 				{/* 1ST SECTION -  GRID */}
-				<div className="grid w-full grid-cols-8 gap-16">
+				<div className="grid w-full grid-cols-8 gap-y-0 md:gap-y-8 md:gap-x-0 gap-x-8">
 					{/* TEXT */}
-					<div className="col-span-4 md:col-span-8 flex flex-col items-start justify-start md:order-2">
+					<div className="col-span-4 border_test w-full md:col-span-8 flex flex-col items-start justify-start md:order-2">
 						<h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
 							Biography
 						</h2>
@@ -51,8 +51,7 @@ const About = () => {
 						</p>
 					</div>
 					{/* IMAGE */}
-					<div className="col-span-4 md:col-span-8 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 md:order-1 ">
-						<div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+					<div className="col-span-4 overflow-hidden w-full-4 md:col-span-8 relative h-max   md:order-1 ">
 						<Image
 							src={profilePic}
 							priority="true"
@@ -62,7 +61,7 @@ const About = () => {
 						/>
 					</div>
 				</div>
-				<Skills />
+				{/* <Skills /> */}
 				<Experience />
 				{/* <Education /> */}
 			</div>
