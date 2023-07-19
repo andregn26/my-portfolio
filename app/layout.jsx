@@ -23,8 +23,7 @@ export default function RootLayout({ children }) {
 				</Script>
 				<Navbar
 					className="w-full 
-				px-32 lg:px-24 md:px-16 sm:px-8 py-8 mb-8 f
-				ont-medium 
+				px-32 lg:px-24 md:px-16 sm:px-8 py-8 mb-8 font-medium 
 				flex items-center justify-between 
 				absolute top-0 left-0"
 				/>

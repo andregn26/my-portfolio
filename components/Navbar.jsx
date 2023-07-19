@@ -8,6 +8,7 @@ import { GithubIcon, InstagramIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Ic
 import { motion } from "framer-motion";
 import useThemeSwitcher from "./hooks/useThemeSwitcher";
 import { useRouter } from "next/navigation";
+import { MdConstruction } from "react-icons/md";
 
 const ThemeButton = ({ mode, setMode }) => {
 	return (
@@ -103,7 +104,16 @@ const NavlinksDesktop = ({ className = "" }) => {
 		<nav className={`${className}`}>
 			<CustomLink href="/" title="Home" className="mr-4" />
 			<CustomLink href="/about" title="About" className="mx-4" />
-			<CustomLink href="/projects" title="Projects" className="ml-4" />
+			<div>
+				<CustomLink
+					href="/projects"
+					title="Projects"
+					className="ml-4 text-gray-400 dark:text-gray-500 pointer-events-none relative"
+				/>
+				<div className="rounded-full w-5 h-5 absolute bg-dark/70 dark:bg-light/70 top-2 right-5">
+					<MdConstruction className="w-full h-auto p-1 text-light dark:text-dark" />
+				</div>
+			</div>
 		</nav>
 	);
 };
@@ -117,11 +127,17 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 				href="/about"
 				title="About"
 			/>
-			<CustomMobileLink
-				toggleMenu={handleClickMenu}
-				href="/projects"
-				title="Projects"
-			/>
+			<div className="flex items-center gap-2">
+				<CustomMobileLink
+					toggleMenu={handleClickMenu}
+					href="/projects"
+					title="Projects"
+					className="text-gray-400 dark:text-gray-500 pointer-events-none relative"
+				/>
+				<div className="rounded-full w-5 h-5 dark:bg-dark/70 bg-light/70">
+					<MdConstruction className="w-full h-auto p-1 dark:text-light text-dark" />
+				</div>
+			</div>
 		</nav>
 	);
 };
@@ -136,7 +152,7 @@ export const Navbar = ({ className = "" }) => {
 	return (
 		<>
 			<header className={`${className}`}>
-				<div className="flex justify-between w-full items-center">
+				<div className="flex justify-between w-full items-center relative">
 					{/* LEFT SIDE */}
 					<div className="flex lg:justify-between lg:w-full gap-2">
 						<Logo className="flex items-center justify-center" />
@@ -147,7 +163,9 @@ export const Navbar = ({ className = "" }) => {
 					</div>
 
 					{/* CENTER */}
-					<NavlinksDesktop className="flex justify-center lg:hidden" />
+
+					<NavlinksDesktop className="bg-light/90 dark:bg-dark/95 border border-1 border-transparent dark:border-light shadow-lg rounded-md px-10 py-4 flex z-10 right-[50%] translate-x-[50%] fixed justify-center lg:hidden" />
+
 					{/* RIGHT SIDE */}
 					<div className="flex justify-end items-center lg:hidden content-end">
 						{/* SOCIAL MEDIA NAVIGATION & THEME SWITCHER */}

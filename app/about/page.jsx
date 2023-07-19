@@ -7,6 +7,8 @@ import { useRef, useEffect } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Hobbies from "@/components/Hobbies";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const About = () => {
@@ -61,10 +63,11 @@ const About = () => {
 						/>
 					</div>
 				</div>
-				<Skills />
-				<Experience />
-				{/* <Education /> */}
-			</div>
+			</div>{" "}
+			<Skills />
+			<Experience />
+			<Education />
+			<Hobbies />
 		</>
 	);
 };
