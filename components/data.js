@@ -58,6 +58,13 @@ export const items = [
 		tags: ["Mountains", "Aesthetic", "Pretty", "Scenic", "Rugged"],
 	},
 	{
+		id: 16,
+		url: "/images/photos/04_09_2023-04686.webp",
+		title: "Lorem ipsum",
+		description: "Lorem ipsum dolor",
+		tags: ["Mountains", "Aesthetic", "Pretty", "Scenic", "Rugged"],
+	},
+	{
 		id: 9,
 		url: "/images/photos/09_17_2022-03332.webp",
 		title: "Lorem ipsum",
