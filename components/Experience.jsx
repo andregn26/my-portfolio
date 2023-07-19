@@ -43,7 +43,7 @@ const Experience = () => {
 	return (
 		<div className="my-64">
 			{/* TITLE */}
-			<h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+			<h2 className="font-bold text-8xl mb-32 md:mb-16 w-full text-center md:text-6xl xs:text-4xl ">
 				Experience
 			</h2>
 			{/* CONTENT */}
