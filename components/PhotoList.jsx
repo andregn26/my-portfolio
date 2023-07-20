@@ -1,22 +1,29 @@
 import React from "react";
 import { items } from "./data";
 import { motion } from "framer-motion";
+import { IoLocation } from "react-icons/io5";
 
 const Card = ({ setSelected, item }) => {
 	return (
-		<div className="inline-block w-full mb-4">
-			<motion.img
-				layoutId={`card-${item.id}`}
-				src={item.url}
-				className="w-full shadow-xl image-full cursor-pointer bg-light rounded-md"
-				whileHover={{ scale: 1.025, transition: { duration: 0.2 } }}
-				whileTap={{ scale: 0.95 }}
-				onClick={() => {
-					setSelected(item);
-				}}
-			/>
-			<div className="flex flex-wrap mt-2">ola mundo</div>
-		</div>
+		<motion.div
+			whileHover={{ scale: 1.025, transition: { duration: 0.2 } }}
+			whileTap={{ scale: 0.95 }}
+			onClick={() => {
+				setSelected(item);
+			}}
+			className="shadow-xl w-full mb-4">
+			<div className="inline-block w-full">
+				<motion.img
+					layoutId={`card-${item.id}`}
+					src={item.url}
+					className="w-full shadow-xl image-full cursor-pointer bg-light rounded-t-md border border-solid border-transparent dark:border-light  border-b-0"
+				/>
+				<div className="flex flex-wrap mt-0 px-2  py-3 border border-solid border-transparent dark:border-light rounded-b-md border-t-0">
+					<IoLocation className="dark:text-dark mr-1" />
+					<h5 className="text-xs font-medium dark:text-dark"> {item.location}</h5>
+				</div>
+			</div>
+		</motion.div>
 	);
 };
 

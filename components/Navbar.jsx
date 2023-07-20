@@ -104,6 +104,7 @@ const NavlinksDesktop = ({ className = "" }) => {
 		<nav className={`${className}`}>
 			<CustomLink href="/" title="Home" className="mr-4" />
 			<CustomLink href="/about" title="About" className="mx-4" />
+			<CustomLink href="/photography" title="Photography" className="mx-4" />
 			<div>
 				<CustomLink
 					href="/projects"
@@ -122,11 +123,7 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 	return (
 		<nav className={`${className} flex items-center flex-col justify-center`}>
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/" title="Home" />
-			<CustomMobileLink
-				toggleMenu={handleClickMenu}
-				href="/about"
-				title="About"
-			/>
+			<CustomMobileLink toggleMenu={handleClickMenu} href="/about" title="About" />
 			<div className="flex items-center gap-2">
 				<CustomMobileLink
 					toggleMenu={handleClickMenu}
@@ -156,10 +153,7 @@ export const Navbar = ({ className = "" }) => {
 					{/* LEFT SIDE */}
 					<div className="flex lg:justify-between lg:w-full gap-2">
 						<Logo className="flex items-center justify-center" />
-						<MenuIcon
-							handleClickMenu={handleClickMenu}
-							isOpen={isOpen}
-						/>
+						<MenuIcon handleClickMenu={handleClickMenu} isOpen={isOpen} />
 					</div>
 
 					{/* CENTER */}
@@ -179,10 +173,7 @@ export const Navbar = ({ className = "" }) => {
 							<SocialMediaIcon href="https://github.com/andregn26">
 								<InstagramIcon />
 							</SocialMediaIcon>
-							<ThemeButton
-								mode={mode}
-								setMode={setMode}
-							/>
+							<ThemeButton mode={mode} setMode={setMode} />
 						</nav>
 					</div>
 					{/* PAGES NAVIGATION  MOBILE*/}
@@ -202,9 +193,7 @@ export const Navbar = ({ className = "" }) => {
 							className="bg-dark/90 dark:bg-light/75
 				min-w-[70vw] rounded-lg backdrop-blur-md py-32
 				flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
-							<NavlinksMobile
-								handleClickMenu={handleClickMenu}
-							/>
+							<NavlinksMobile handleClickMenu={handleClickMenu} />
 							{/* SOCIAL MEDIA NAVIGATION & THEME SWITCHER */}
 							<nav className="flex items-center justify-center flex-wrap gap-2 sm:gap-1 mt-2">
 								<motion.a
@@ -231,10 +220,7 @@ export const Navbar = ({ className = "" }) => {
 									className="w-6 h-auto">
 									<InstagramIcon />
 								</motion.a>
-								<ThemeButton
-									mode={mode}
-									setMode={setMode}
-								/>
+								<ThemeButton mode={mode} setMode={setMode} />
 							</nav>
 						</motion.div>
 					) : null}
