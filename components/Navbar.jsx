@@ -124,6 +124,11 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 		<nav className={`${className} flex items-center flex-col justify-center`}>
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/" title="Home" />
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/about" title="About" />
+			<CustomMobileLink
+				toggleMenu={handleClickMenu}
+				href="/photography"
+				title="Photography"
+			/>
 			<div className="flex items-center gap-2">
 				<CustomMobileLink
 					toggleMenu={handleClickMenu}
