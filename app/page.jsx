@@ -58,7 +58,10 @@ export default function Home() {
 							border-2 border-solid border-transparent hover:border-dark dark:hover:border-light
 							md:p-2 md:px-4 md:text-base"
 							download={true}>
-							Resume <LinkArrow className={"w-6 ml-1"} />
+							Resume
+							<div className="w-6 h-auto">
+								<LinkArrow className={"ml-1"} />
+							</div>
 						</Link>
 						<Link
 							href="mailto:andregn26@gmail.com"

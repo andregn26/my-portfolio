@@ -23,8 +23,3 @@
     border: 1px solid red;
 }
 
-@supports (-webkit-backdrop-filter: blur(1px)) {
-  svg {
-    height: intrinsic;
-  }
-}

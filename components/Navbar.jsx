@@ -13,7 +13,7 @@ import { MdConstruction } from "react-icons/md";
 const ThemeButton = ({ mode, setMode }) => {
 	return (
 		<button
-			className="flex items-center justify-center rounded-full p-1"
+			className="flex items-center justify-center rounded-full p-1 w-8 h-auto"
 			onClick={() => setMode(mode === "light" ? "dark" : "light")}>
 			{mode === "dark" ? (
 				<SunIcon className={"fill-dark"} />
@@ -173,6 +173,7 @@ export const Navbar = ({ className = "" }) => {
 							<SocialMediaIcon href="https://github.com/andregn26">
 								<InstagramIcon />
 							</SocialMediaIcon>
+
 							<ThemeButton mode={mode} setMode={setMode} />
 						</nav>
 					</div>
