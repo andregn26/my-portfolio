@@ -20,7 +20,7 @@ const Card = ({ setSelected, item }) => {
 				/>
 				<div className="flex flex-wrap mt-0 px-2  py-3 border border-solid border-transparent dark:border-light rounded-b-md border-t-0">
 					<IoLocation className="dark:text-dark mr-1" />
-					<h5 className="text-xs font-medium dark:text-dark"> {item.location}</h5>
+					<h5 className="text-xs font-medium dark:text-light"> {item.location}</h5>
 				</div>
 			</div>
 		</motion.div>
