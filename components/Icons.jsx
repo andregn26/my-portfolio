@@ -18,8 +18,6 @@ export const LinkedInIcon = ({ className, ...rest }) => (
 export const GithubIcon = ({ className, ...rest }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="1em"
-		height="1em"
 		viewBox="0 0 512 512"
 		{...rest}
 		className={`w-full h-auto ${className}`}>
@@ -123,8 +121,6 @@ export const InstagramIcon = ({ className, ...rest }) => (
 export const SunIcon = ({ className, ...rest }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
 		viewBox="0 0 24 24"
 		{...rest}
 		className={`w-full h-auto ${className}`}>
@@ -230,50 +226,14 @@ export const SunIcon = ({ className, ...rest }) => (
 		<mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
 			<circle cx="12" cy="12" r="12" fill="#fff" />
 			<circle cx="22" cy="2" r="3" fill="#fff">
-				<animate
-					fill="freeze"
-					attributeName="cx"
-					begin="0.1s"
-					dur="0.4s"
-					values="22;18"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="cy"
-					begin="0.1s"
-					dur="0.4s"
-					values="2;6"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="r"
-					begin="0.1s"
-					dur="0.4s"
-					values="3;12"
-				/>
+				<animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+				<animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+				<animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="3;12" />
 			</circle>
 			<circle cx="22" cy="2" r="1">
-				<animate
-					fill="freeze"
-					attributeName="cx"
-					begin="0.1s"
-					dur="0.4s"
-					values="22;18"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="cy"
-					begin="0.1s"
-					dur="0.4s"
-					values="2;6"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="r"
-					begin="0.1s"
-					dur="0.4s"
-					values="1;10"
-				/>
+				<animate fill="freeze" attributeName="cx" begin="0.1s" dur="0.4s" values="22;18" />
+				<animate fill="freeze" attributeName="cy" begin="0.1s" dur="0.4s" values="2;6" />
+				<animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="1;10" />
 			</circle>
 		</mask>
 		<circle
@@ -283,13 +243,7 @@ export const SunIcon = ({ className, ...rest }) => (
 			fill="currentColor"
 			mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)">
 			<set attributeName="opacity" begin="0.5s" to="0" />
-			<animate
-				fill="freeze"
-				attributeName="r"
-				begin="0.1s"
-				dur="0.4s"
-				values="6;10"
-			/>
+			<animate fill="freeze" attributeName="r" begin="0.1s" dur="0.4s" values="6;10" />
 		</circle>
 	</svg>
 );
@@ -297,8 +251,6 @@ export const SunIcon = ({ className, ...rest }) => (
 export const MoonIcon = ({ className, ...rest }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
 		viewBox="0 0 24 24"
 		{...rest}
 		className={`w-full h-auto ${className}`}>
@@ -352,12 +304,7 @@ export const MoonIcon = ({ className, ...rest }) => (
 		</g>
 		<g fill="currentColor">
 			<path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
-				<animate
-					fill="freeze"
-					attributeName="fill-opacity"
-					dur="0.4s"
-					values="1;0"
-				/>
+				<animate fill="freeze" attributeName="fill-opacity" dur="0.4s" values="1;0" />
 			</path>
 			<path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z">
 				<animate
@@ -381,50 +328,14 @@ export const MoonIcon = ({ className, ...rest }) => (
 		<mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
 			<circle cx="12" cy="12" r="12" fill="#fff" />
 			<circle cx="18" cy="6" r="12" fill="#fff">
-				<animate
-					fill="freeze"
-					attributeName="cx"
-					begin="0.6s"
-					dur="0.4s"
-					values="18;22"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="cy"
-					begin="0.6s"
-					dur="0.4s"
-					values="6;2"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="r"
-					begin="0.6s"
-					dur="0.4s"
-					values="12;3"
-				/>
+				<animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+				<animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+				<animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="12;3" />
 			</circle>
 			<circle cx="18" cy="6" r="10">
-				<animate
-					fill="freeze"
-					attributeName="cx"
-					begin="0.6s"
-					dur="0.4s"
-					values="18;22"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="cy"
-					begin="0.6s"
-					dur="0.4s"
-					values="6;2"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="r"
-					begin="0.6s"
-					dur="0.4s"
-					values="10;1"
-				/>
+				<animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22" />
+				<animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2" />
+				<animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1" />
 			</circle>
 		</mask>
 		<circle
@@ -435,13 +346,7 @@ export const MoonIcon = ({ className, ...rest }) => (
 			mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
 			opacity="0">
 			<set attributeName="opacity" begin="0.6s" to="1" />
-			<animate
-				fill="freeze"
-				attributeName="r"
-				begin="0.6s"
-				dur="0.4s"
-				values="10;6"
-			/>
+			<animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6" />
 		</circle>
 	</svg>
 );
@@ -449,8 +354,6 @@ export const MoonIcon = ({ className, ...rest }) => (
 export const LinkArrow = ({ className, ...rest }) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width={24}
-		height={24}
 		viewBox="0 0 24 24"
 		className={`w-full h-auto ${className}`}
 		{...rest}>

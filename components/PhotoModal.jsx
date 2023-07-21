@@ -31,7 +31,7 @@ const PhotoModal = ({ selected, setSelected }) => {
 					className="bg-dark rounded-b-md p-4">
 					<div className="flex mt-0 px-2 items-center py-3 text-light">
 						<IoLocation className="text-2xl mr-1" />
-						<h3 className="text-lg font-medium  ">{selected.title}</h3>
+						<h3 className="text-lg font-medium  ">{selected.location}</h3>
 					</div>
 				</motion.div>
 			</div>
