@@ -47,14 +47,6 @@ const About = () => {
 						<div>
 							<p className="font-medium mt-2  relative">
 								Scroll down and get to know a little more about me!
-								<motion.span
-									initial={{ y: 50, opacity: 0 }}
-									animate={{ y: 0, opacity: 1 }}
-									transition={{ delay: 1, duration: 1.5, ease: easeOut }}
-									className={`h-[1px] left-0 -bottom-0.5 inline-block absolute bg-primary dark:bg-primaryDark group-hover:w-full w-full
-								}`}>
-									&nbsp;
-								</motion.span>
 							</p>
 						</div>
 					</div>

@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, address, work, emoji }) => {
 	const ref = useRef(null);
 	return (
 		<li
@@ -16,6 +16,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 				whileInView={{ y: 0 }}
 				transition={{ duration: 0.5, type: "spring" }}>
 				<h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+					<span className="inline">{emoji} &nbsp;</span>
 					{position}&nbsp;
 					<a
 						href={companyLink}
@@ -54,6 +55,16 @@ const Experience = () => {
 				/>
 				<ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
 					<Details
+						emoji="&#128187;"
+						position="Web Developer"
+						company="Inovflow"
+						time="2023-Present"
+						address="Carnaxide, Lisbon"
+						work="Worked on a team responsible for developing, mantain and deploy websites for clients."
+						companyLink="https://www.inovflow.pt/"
+					/>
+					<Details
+						emoji="&#127919;"
 						position="Software Engineer"
 						company="Google"
 						time="2022-Present"
@@ -64,26 +75,7 @@ const Experience = () => {
 						companyLink="https://www.manpowergroup.pt"
 					/>
 					<Details
-						position="Software Engineer"
-						company="Google"
-						time="2022-Present"
-						address="Mountain View, CA"
-						work="Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization."
-						companyLink="https://www.manpowergroup.pt"
-					/>
-					<Details
-						position="Software Engineer"
-						company="Google"
-						time="2022-Present"
-						address="Mountain View, CA"
-						work="Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization."
-						companyLink="https://www.manpowergroup.pt"
-					/>
-					<Details
+						emoji="&#127829;"
 						position="Software Engineer"
 						company="Google"
 						time="2022-Present"
