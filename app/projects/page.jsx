@@ -11,7 +11,7 @@ const projects = [
 	{
 		name: "SoulDance Studio",
 		description:
-			"Lorem ipsum dolor sit amet. Et molestias voluptas sed nemo mollitia non galisum sunt a eius earum qui similique eligendi eum optio iure et optio molestias. Est obcaecati numquam sed dolorum suscipit et autem facilis et quibusdam voluptas ea cumque pariatur. Ea aliquam dolorum non exercitationem aspernatur est voluptatibus dolor.",
+			"The construction of the SoulDance website involved a comprehensive and efficient development process, employing modern web technologies to deliver a captivating user experience. Initially, thorough planning and wireframing were carried out to conceptualize the site's layout and features. NextJs was chosen as the framework due to its server-side rendering capabilities and seamless integration with React, which allowed for fast-loading, SEO-friendly pages. React, being the primary library, facilitated the creation of interactive and dynamic components that enhanced user engagement. Tailwind CSS was selected for styling, enabling a responsive and visually appealing design, with the utility-first approach streamlining the development process. For the backend and database, Sanity was employed, empowering the team to manage content effortlessly and efficiently. Overall, this combination of React, NextJs, Tailwind CSS, and Sanity provided the foundation for a modern, responsive, and user-friendly website for SoulDance, catering to their unique needs and delighting visitors with a seamless dance experience.",
 		image: "/images/projects/agency-website-cover-image.jpg",
 		stack: {
 			library: "React.js",
