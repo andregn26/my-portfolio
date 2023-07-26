@@ -74,7 +74,7 @@ const H1Icon = ({ text }) => {
 const Skills = () => {
 	const ref = useRef(null);
 	const iconStyles =
-		"w-24 xs:w-20 h-24 xs:h-20 shadow-lg p-3 flex items-center border border-solid border-1 border-transparent dark:border-light  rounded-full";
+		"w-24 xs:w-20 h-24 xs:h-20 shadow-lg p-3 flex items-center border border-solid border-1 border-transparent dark:border-light/50  rounded-full";
 	const singleIconAnimation = {
 		initial: {
 			opacity: 0,

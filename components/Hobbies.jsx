@@ -8,10 +8,10 @@ import { FaBookReader } from "react-icons/fa";
 
 const Card = ({ interest, icon }) => {
 	const hobbiesStyles =
-		"flex flex-col p-4 items-center mx-auto w-[200px] justify-center shadow-lg border border-solid border-transparent dark:border-light dark:bg-dark rounded-md";
+		"flex flex-col p-4 items-center mx-auto w-[200px] justify-center shadow-lg border border-solid border-transparent dark:border-light/50 dark:bg-dark rounded-md";
 	return (
 		<div className={`${hobbiesStyles} `}>
-			<div className="w-24 h-24 rounded-full shadow-md flex items-center justify-center border border-solid border-transparent dark:border-light">
+			<div className="w-24 h-24 rounded-full shadow-md flex items-center justify-center border border-solid border-transparent dark:border-light/50">
 				{icon}
 			</div>
 			<h5>{interest}</h5>

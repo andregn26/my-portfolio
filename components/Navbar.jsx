@@ -105,10 +105,11 @@ const NavlinksDesktop = ({ className = "" }) => {
 			<CustomLink href="/" title="Home" className="mr-4" />
 			<CustomLink href="/about" title="About" className="mx-4" />
 			<CustomLink href="/photography" title="Photography" className="mx-4" />
+			<CustomLink href="/projects" title="Web" className="mx-4" />
 			<div>
 				<CustomLink
-					href="/projects"
-					title="Projects"
+					href="/blog"
+					title="Blog"
 					className="ml-4 text-gray-400 dark:text-gray-500 pointer-events-none relative"
 				/>
 				<div className="rounded-full w-5 h-5 absolute bg-dark/70 dark:bg-light/70 top-2 right-5">
@@ -129,11 +130,12 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 				href="/photography"
 				title="Photography"
 			/>
+			<CustomMobileLink toggleMenu={handleClickMenu} href="/projects" title="Web" />
 			<div className="flex items-center gap-2">
 				<CustomMobileLink
 					toggleMenu={handleClickMenu}
-					href="/projects"
-					title="Projects"
+					href="/blog"
+					title="Blog"
 					className="text-gray-400 dark:text-gray-500 pointer-events-none relative"
 				/>
 				<div className="rounded-full w-5 h-5 dark:bg-dark/70 bg-light/70">
@@ -163,7 +165,7 @@ export const Navbar = ({ className = "" }) => {
 
 					{/* CENTER */}
 
-					<NavlinksDesktop className="bg-light/90 dark:bg-dark/95 border border-1 border-transparent dark:border-light shadow-lg rounded-md px-10 py-4 flex z-10 right-[50%] translate-x-[50%] fixed justify-center lg:hidden" />
+					<NavlinksDesktop className="bg-light/90 dark:bg-dark/95 border border-1 border-transparent dark:border-light/50 shadow-lg rounded-md px-10 py-4 flex z-10 right-[50%] translate-x-[50%] fixed justify-center lg:hidden" />
 
 					{/* RIGHT SIDE */}
 					<div className="flex justify-end items-center lg:hidden content-end">

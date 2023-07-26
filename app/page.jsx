@@ -55,7 +55,7 @@ export default function Home() {
 							bg-dark hover:bg-light dark:bg-light dark:hover:bg-dark
 							text-light hover:text-dark dark:text-black dark:hover:text-light text-lg font-semibold
 							p-2.5 px-6 rounded-lg
-							border-2 border-solid border-transparent hover:border-dark dark:hover:border-light
+							border-2 border-solid border-transparent hover:border-dark dark:hover:border-light/50
 							md:p-2 md:px-4 md:text-base"
 							download={true}>
 							Resume

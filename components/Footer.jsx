@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="w-full border-t border-solid border-dark dark:border-light  font-medium text-md px-10 sm:text-base ">
+		<footer className="w-full border-t border-solid border-dark dark:border-light/50  font-medium text-md px-10 sm:text-base ">
 			<div className="py-8 flex items-center justify-between lg:flex-col lg:py-6 gap-2">
 				<span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
 				<div className="flex items-center">

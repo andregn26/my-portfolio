@@ -16,9 +16,9 @@ const Card = ({ setSelected, item }) => {
 				<motion.img
 					layoutId={`card-${item.id}`}
 					src={item.url}
-					className="w-full shadow-xl image-full cursor-pointer bg-light rounded-t-md border border-solid border-transparent dark:border-light  border-b-0"
+					className="w-full shadow-xl image-full cursor-pointer bg-light dark:bg-dark rounded-t-md border border-solid border-transparent dark:border-light/50  border-b-0"
 				/>
-				<div className="flex flex-wrap mt-0 px-2  py-3 border border-solid border-transparent dark:border-light rounded-b-md border-t-0">
+				<div className="flex flex-wrap mt-0 px-2  py-3 border border-solid border-transparent dark:border-light/50 rounded-b-md border-t-0">
 					<IoLocation className="dark:text-dark mr-1" />
 					<h5 className="text-xs font-medium dark:text-light"> {item.location}</h5>
 				</div>
