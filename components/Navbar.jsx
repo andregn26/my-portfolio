@@ -177,7 +177,7 @@ export const Navbar = ({ className = "" }) => {
 							<SocialMediaIcon href="https://github.com/andregn26">
 								<GithubIcon />
 							</SocialMediaIcon>
-							<SocialMediaIcon href="https://github.com/andregn26">
+							<SocialMediaIcon href="https://www.instagram.com/andregn33/">
 								<InstagramIcon />
 							</SocialMediaIcon>
 
@@ -221,7 +221,7 @@ export const Navbar = ({ className = "" }) => {
 									<GithubIcon />
 								</motion.a>
 								<motion.a
-									href="/"
+									href="https://www.instagram.com/andregn33/"
 									target="_blank"
 									whileHover={{ y: -2 }}
 									whileTap={{ scale: 0.9 }}
