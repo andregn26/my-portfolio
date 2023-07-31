@@ -29,7 +29,7 @@ const ButtonsGroup = ({ project }) => {
 				</a>
 				{project.isLive ? (
 					<a
-						href={project.githubLink}
+						href={project.liveLink}
 						target="_blank"
 						className={`button_theme ${buttonStyle}`}>
 						Go Live

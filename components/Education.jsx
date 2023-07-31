@@ -51,20 +51,18 @@ const Education = () => {
 				/>
 				<ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
 					<Details
-						type="Bachelor Of Science In Computer Science"
-						time="2016-2020"
-						place="Massachusetts Institute Of Technology (MIT)"
-						schoolLink="www.ironhack.pt"
-						info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."
+						type="Full Stack Web Development"
+						time="may 2022"
+						place="IronHack Portugal"
+						schoolLink="https://www.ironhack.pt"
+						info="Relevant courses included introduction to web development, React library, Nodejs for backend, responsive design andintroduction to API's"
 					/>
 					<Details
-						type="Bachelor Of Science In Computer Science"
-						time="2016-2020"
-						place="Massachusetts Institute Of Technology (MIT)"
+						type="Bachelor’s degree in Marketing & Advertising"
+						time="jun 2021"
+						place="Escola Superior de Comunicação Social"
 						schoolLink="www.ironhack.pt"
-						info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."
+						info="Relevant courses included Graphic Design, Digital Marketing, Consumer Behaviour, Consumerism and Online Consumers"
 					/>
 				</ul>
 			</div>

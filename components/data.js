@@ -177,6 +177,6 @@ export const projects = [
 		},
 		githubLink: "https://github.com/andregn26/corporate-dashboard",
 		isLive: true,
-		liveLink: "https://insightiq.onrender.com/dashboard",
+		liveLink: "https://insightiq.onrender.com/",
 	},
 ];

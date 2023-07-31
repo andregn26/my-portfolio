@@ -58,32 +58,37 @@ const Experience = () => {
 						emoji="&#128187;"
 						position="Web Developer"
 						company="Inovflow"
-						time="2023-Present"
-						address="Carnaxide, Lisbon"
-						work="Worked on a team responsible for developing, mantain and deploy websites for clients."
+						time="mar 2023-Present"
+						address="Oeiras, Portugal"
+						work="As a WordPress developer, I create and maintain websites for diverse clients. My role involves building custom themes, implementing plugins, and ensuring responsive design for optimal user experience. I troubleshoot issues, perform updates, and prioritize security. Collaborating with designers and clients, I deliver functional and visually appealing sites, catering to individual needs and objectives. "
 						companyLink="https://www.inovflow.pt/"
 					/>
 					<Details
 						emoji="&#127919;"
-						position="Software Engineer"
-						company="Google"
-						time="2022-Present"
-						address="Mountain View, CA"
-						work="Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization."
+						position="Marketing Assistant"
+						company="ManpowerGroup Portugal"
+						time="jan 2021 - set 2022"
+						address="Lisbon, Portugal"
+						work="As a Marketing Assistant, I support various marketing initiatives, such as creating content, coordinating events, managing social media, and assisting with market research. My goal is to contribute to the company's brand awareness and help drive business growth through effective marketing strategies."
 						companyLink="https://www.manpowergroup.pt"
 					/>
 					<Details
 						emoji="&#127829;"
-						position="Software Engineer"
-						company="Google"
-						time="2022-Present"
-						address="Mountain View, CA"
-						work="Worked on a team responsible for developing new features for Google's 
-                   search engine, including improving the accuracy and relevance of search results and 
-                   developing new tools for data analysis and visualization."
-						companyLink="https://www.manpowergroup.pt"
+						position="Pizza Delivery Driver"
+						company="Pizza Hut"
+						time="set 2018 - mar 2021"
+						address="Sintra, Portugal"
+						work="While studying, I worked in food distribution companies to pay my course expenses. These years served to develop critical soft skills such as communication, a sense of responsibility and commitment to carrying out tasks"
+						companyLink="https://www.pizzahut.pt/"
+					/>
+					<Details
+						emoji="&#127829;"
+						position="Pizza Delivery Driver"
+						company="Dominos Pizza"
+						time="set 2016 - set 2018"
+						address="Sintra, Portugal"
+						work="While studying, I worked in food distribution companies to pay my course expenses. These years served to develop critical soft skills such as communication, a sense of responsibility and commitment to carrying out tasks"
+						companyLink="https://www.dominospizza.pt/"
 					/>
 				</ul>
 			</div>
