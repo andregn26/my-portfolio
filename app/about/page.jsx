@@ -2,7 +2,7 @@
 
 import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
-import profilePic from "@/public/images/profile/profile-pic-1.jpg";
+import profilePic from "@/public/images/profile/profile_real.webp";
 import { useRef, useEffect } from "react";
 import { useInView, useMotionValue, useSpring, motion, easeOut } from "framer-motion";
 import Skills from "@/components/Skills";
@@ -55,7 +55,6 @@ const About = () => {
 						<Image
 							src={profilePic}
 							priority="true"
-							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							className="w-full h-auto rounded-2xl"
 							alt="my-profile-pic"
 						/>
