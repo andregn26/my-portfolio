@@ -79,26 +79,7 @@ const Experience = () => {
 						time="set 2018 - mar 2021"
 						address="Sintra, Portugal"
 						work={
-							<>
-								<p>
-									During my university years, I had the valuable experience of
-									juggling academics with a part-time job as a pizza delivery
-									driver. This unique combination taught me invaluable soft skills
-									that have greatly enriched my personal and professional journey.
-								</p>
-								<p>
-									As a delivery driver, I learned the importance of time
-									management, honed my communication skills through interactions
-									with customers, and developed a strong sense of responsibility
-									and dependability. These skills, combined with my academic
-									achievements, have laid a solid foundation for my career,
-									enabling me to excel in various roles and effectively
-									collaborate with colleagues and clients. My university days as a
-									pizza delivery driver were more than just a job; they were a
-									crucial chapter in my development, shaping me into the
-									well-rounded professional I am today.
-								</p>
-							</>
+							"I managed work schedules around college classes and exams, showcasing exceptional adaptability. I consistently met tight delivery deadlines, even during peak hours, proving my ability to thrive under pressure. Regardless of the weather conditions, I ensured prompt and safe deliveries, adapting seamlessly to all circumstances. When faced with challenging customers, I maintained a positive attitude and handled issues calmly and professionally. I operated delivery vehicles safely, boasting a clean driving record as my top priority."
 						}
 						companyLink="https://www.pizzahut.pt/"
 					/>
