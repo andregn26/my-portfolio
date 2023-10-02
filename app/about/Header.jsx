@@ -1,65 +1,96 @@
-import profilePic from "@/public/images/profile/profile-pic-1.jpg";
+import profilePic from "@/public/images/profile/profile_real.webp";
 import Image from "next/image";
+import { PiCastleTurretFill } from "react-icons/pi";
+import { MdPhotoCamera } from "react-icons/md";
+import { MdDesignServices } from "react-icons/md";
+import { PiStrategyFill } from "react-icons/pi";
+import { PiTelevisionFill } from "react-icons/pi";
+import { FaBookReader } from "react-icons/fa";
 
-export const Header = () => {
-	const ProfilePic = () => {
-		return (
-			<div className="w-32 lg:w-40 flex-shrink-0 mt-12 sm:mt-0">
-				<div className="relative flex-shrink-0 inline-flex items-center justify-center overflow-hidden text-neutral-100 uppercase font-semibold rounded-full w-20 h-20 text-xl lg:text-2xl lg:w-36 lg:h-36 ring-4 ring-white dark:ring-0 shadow-2xl z-0">
-					<Image alt="Avatar" src={profilePic} fill className="object-cover" priority />
+const HeaderText = ({ containerClass }) => {
+	return (
+		<>
+			<div className={`${containerClass}`}>
+				<h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+					Biography
+				</h2>
+				<p className="font-medium">
+					Hi, I'm André, a web developer and curious self-taught UI/UX designer motivated
+					by creating beautiful, functional and user-centric digital experiences. Being
+					passionate about art, I am very influenced by the rules of composition, color
+					and contrast that I try to bring to my projects.
+				</p>
+				<p className="font-medium mt-2">
+					The two years I worked in Marketing helped me combine the visual component with
+					strategic thinking capable of understanding the communication needs of brands.
+				</p>
+				<p className="font-medium mt-2">
+					I look at web development as a toolbox that allows me to bring all my passions
+					and interests together and create something meaningful for clients and the
+					community.
+				</p>
+				<div>
+					<p className="font-medium mt-2  relative">
+						Scroll down and get to know a little more about me!
+					</p>
 				</div>
 			</div>
-		);
-	};
+		</>
+	);
+};
 
-	const ProfIntro = () => {
+const HeaderImage = ({ containerClass }) => {
+	return (
+		<div className={`${containerClass}`}>
+			<Image
+				src={profilePic}
+				priority="true"
+				className="object-cover"
+				alt="my-profile-pic"
+				fill
+			/>
+		</div>
+	);
+};
+
+const HeaderInterests = ({ containerClass }) => {
+	const iconStyles =
+		"w-full h-auto p-4 text-dark dark:text-light hover:text-primary dark:hover:text-primaryDark";
+
+	const Card = ({ interest, icon }) => {
 		return (
 			<>
-				<h2 className="inline-flex items-center text-2xl sm:text-3xl lg:text-4xl font-semibold">
-					<span>Dony Herrera</span>
-					{/* <VerifyIcon className="ml-2" iconClass="w-6 h-6 sm:w-7 sm:h-7 xl:w-8 xl:h-8" /> */}
-				</h2>
-				<span className="block text-sm text-neutral-500 dark:text-neutral-400">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro autem totam iure
-					quibusdam asperiores numquam quae animi assumenda necessitatibus consectetur.
-				</span>
+				<div
+					className={`flex justify-start items-center gap-3 mx-auto w-full shadow-md shadow-neutral-800/10 border border-solid border-transparent dark:border-light/50 bg-white dark:bg-dark rounded-md`}>
+					<div className="w-14 h-14  flex items-center justify-center">{icon}</div>
+					<h4>{interest}</h4>
+				</div>
 			</>
 		);
 	};
-
 	return (
-		<div className="border_green-2  relative bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 p-5 lg:p-8 rounded-3xl md:rounded-[40px] shadow-xl flex flex-col md:flex-row">
-			<ProfilePic />
-			<div className="pt-5 md:pt-1 lg:ml-6 xl:ml-12 flex-grow">
-				<div className="max-w-screen-sm space-y-3.5">
-					<ProfIntro />
-					<a
-						href="#"
-						className="flex items-center text-xs font-medium space-x-2.5 rtl:space-x-reverse cursor-pointer text-neutral-500 dark:text-neutral-400 truncate">
-						{/* <GlobeAltIcon className="flex-shrink-0 w-4 h-4" /> */}
-						<span className="text-neutral-700 dark:text-neutral-300 truncate">
-							https://example.com/me
-						</span>
-					</a>
-					<nav
-						className={`nc-SocialsList flex space-x-3 text-2xl text-neutral-6000 dark:text-neutral-300`}></nav>
-				</div>
-			</div>
+		<div className={`${containerClass}`}>
+			<h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+				Interests
+			</h2>
+			<Card interest="History" icon={<PiCastleTurretFill className={`${iconStyles}`} />} />
+			<Card interest="Photography" icon={<MdPhotoCamera className={`${iconStyles}`} />} />
+			<Card interest="Design" icon={<MdDesignServices className={`${iconStyles}`} />} />
+			<Card interest="Marketing" icon={<PiStrategyFill className={`${iconStyles}`} />} />
+			<Card interest="Advertising" icon={<PiTelevisionFill className={`${iconStyles}`} />} />
+			<Card interest="Philosophy" icon={<FaBookReader className={`${iconStyles}`} />} />
+		</div>
+	);
+};
+
+export const Header = () => {
+	return (
+		<div className="grid w-full grid-cols-8 gap-y-0 md:gap-y-8 md:gap-x-0 gap-x-8">
+			<HeaderText containerClass=" col-span-3 w-full md:col-span-8 flex flex-col items-start justify-start md:order-2" />
+			<HeaderImage containerClass="  col-span-3 overflow-hidden w-full rounded-2xl md:col-span-8 h-[500px] xs:h-[400px] lg-[600px] xl:h-[500px] relative md:order-1" />
+			<HeaderInterests containerClass=" col-span-2 md:col-span-8 flex flex-col gap-3 md:order-3 " />
 		</div>
 	);
 };
 
 export default Header;
-
-{
-	/* IMAGE */
-}
-<div className="col-span-4 overflow-hidden w-full-4 md:col-span-8 relative h-max   md:order-1 ">
-	<Image
-		src={profilePic}
-		priority="true"
-		sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-		className="w-full h-auto rounded-2xl"
-		alt="my-profile-pic"
-	/>
-</div>;

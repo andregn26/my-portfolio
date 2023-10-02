@@ -39,8 +39,9 @@ export default function Home() {
 				{/* TEXT CONTAINER */}
 				<div className="w-1/2 flex flex-col items-center  self-center lg:w-full">
 					<AnimatedText
+						fontClass="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl !leading-[1.1]"
+						dimensionsClass=""
 						text="Journey into the World of a Web Developer."
-						className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl !leading-[1.1]"
 					/>
 					<p className="my-4 text-base font-medium md:text-sm sm:text-xs lg:text-center">
 						As a front-end developer, I am committed to turn ideas into beautiful and

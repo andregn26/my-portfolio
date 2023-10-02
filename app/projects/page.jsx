@@ -46,7 +46,8 @@ const ProjectsPage = () => {
 			<TransitionEffect />
 			<div className="w-full mb-16 flex flex-col items-center justify-center">
 				<AnimatedText
-					className="!mt-16  mb-16 lg:!text-6xl sm:!text-5xl xs:!text-4xl sm:mb-8"
+					fontClass="lg:!text-6xl sm:!text-5xl xs:!text-4xl"
+					dimensionsClass="!mt-16 mb-16 sm:mb-8"
 					text="Bringing Ideas to Life!"
 				/>
 				<div className="grid grid-cols-12 gap-12 md:gap-0 md:gap-y-12 w-full">
