@@ -28,7 +28,7 @@ const Details = ({ position, company, companyLink, time, address, work, emoji })
 				<span className="capitalize font-medium text-dark/75 dark:text-light/90 xs:text-sm">
 					{time} | {address}
 				</span>
-				<p className="font-medium w-full md:text-sm">{work}</p>
+				<p className=" w-full text-sm">{work}</p>
 			</motion.div>
 		</li>
 	);
@@ -78,7 +78,28 @@ const Experience = () => {
 						company="Pizza Hut"
 						time="set 2018 - mar 2021"
 						address="Sintra, Portugal"
-						work="While studying, I worked in food distribution companies to pay my course expenses. These years served to develop critical soft skills such as communication, a sense of responsibility and commitment to carrying out tasks"
+						work={
+							<>
+								<p>
+									During my university years, I had the valuable experience of
+									juggling academics with a part-time job as a pizza delivery
+									driver. This unique combination taught me invaluable soft skills
+									that have greatly enriched my personal and professional journey.
+								</p>
+								<p>
+									As a delivery driver, I learned the importance of time
+									management, honed my communication skills through interactions
+									with customers, and developed a strong sense of responsibility
+									and dependability. These skills, combined with my academic
+									achievements, have laid a solid foundation for my career,
+									enabling me to excel in various roles and effectively
+									collaborate with colleagues and clients. My university days as a
+									pizza delivery driver were more than just a job; they were a
+									crucial chapter in my development, shaping me into the
+									well-rounded professional I am today.
+								</p>
+							</>
+						}
 						companyLink="https://www.pizzahut.pt/"
 					/>
 					<Details

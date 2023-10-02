@@ -1,5 +1,5 @@
 import React from "react";
-import { items } from "./data";
+import { items } from "../data";
 import { motion } from "framer-motion";
 import { IoLocation } from "react-icons/io5";
 

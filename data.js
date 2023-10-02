@@ -134,8 +134,8 @@ export const projects = [
 			others: ["Photoshop", "Illustrator"],
 		},
 		githubLink: "https://github.com/andregn26/next-souldance",
-		isLive: false,
-		liveLink: "",
+		isLive: true,
+		liveLink: "https://www.souldancestudio.pt/",
 	},
 	{
 		name: "Travel Advisor",

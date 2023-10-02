@@ -9,7 +9,7 @@ import { BiSolidServer } from "react-icons/bi";
 import { FaDatabase } from "react-icons/fa";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
-import { projects } from "@/components/data";
+import { projects } from "@/data";
 
 const ButtonsGroup = ({ project }) => {
 	const buttonStyle = `w-full flex items-center justify-center text-lg font-semibold
