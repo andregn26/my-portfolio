@@ -51,7 +51,7 @@ const About = () => {
 						</div>
 					</div>
 					{/* IMAGE */}
-					<div className="col-span-4 overflow-hidden w-full-4 md:col-span-8 relative h-max   md:order-1 ">
+					<div className="col-span-4 overflow-hidden w-full md:col-span-8 relative h-max   md:order-1 ">
 						<Image
 							src={profilePic}
 							priority="true"
