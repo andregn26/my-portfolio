@@ -7,28 +7,20 @@ import LiIcon from "./LiIcon";
 const Details = ({ position, company, companyLink, time, address, work, emoji }) => {
 	const ref = useRef(null);
 	return (
-		<li
-			ref={ref}
-			className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between">
+		<li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-center justify-between">
 			<LiIcon reference={ref} />
-			<motion.div
-				initial={{ y: 50 }}
-				whileInView={{ y: 0 }}
-				transition={{ duration: 0.5, type: "spring" }}>
-				<h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+			<motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, type: "spring" }}>
+				<h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">
 					<span className="inline">{emoji} &nbsp;</span>
 					{position}&nbsp;
-					<a
-						href={companyLink}
-						target="_blank"
-						className="text-primary dark:text-primaryDark capitalize">
+					<a href={companyLink} target="_blank" className="text-primary capitalize">
 						@{company}
 					</a>
 				</h3>
-				<span className="capitalize font-medium text-dark/75 dark:text-light/90 xs:text-sm">
+				<span className="capitalize font-medium text-dark/75 text-sm md:text-base">
 					{time} | {address}
 				</span>
-				<p className=" w-full text-sm">{work}</p>
+				<p className="w-full text-sm md:text-base">{work}</p>
 			</motion.div>
 		</li>
 	);
@@ -42,18 +34,16 @@ const Experience = () => {
 		layoutEffect: false,
 	});
 	return (
-		<div className="my-64">
+		<div className="my-32">
 			{/* TITLE */}
-			<h2 className="font-bold text-8xl mb-32 md:mb-16 w-full text-center md:text-6xl xs:text-4xl ">
-				Experience
-			</h2>
+			<h2 className="w-full text-center font-bold text-4xl md:text-6xl md:mb-32 mb-16">Experience</h2>
 			{/* CONTENT */}
-			<div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
+			<div ref={ref} className="lg:w-[75%] mx-auto relative w-[90%]">
 				<motion.div
 					style={{ scaleY: scrollYProgress }}
-					className="absolute left-9 top-0 h-full w-[4px] bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
+					className="absolute left-9 top-0 h-full md:w-[4px] w-[2px] bg-dark origin-top  md:left-[30px] xs:left-[20px]"
 				/>
-				<ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
+				<ul className="w-full flex flex-col items-start justify-between md:ml-4 ml-2 ">
 					<Details
 						emoji="&#128187;"
 						position="Web Developer"
@@ -66,7 +56,7 @@ const Experience = () => {
 					<Details
 						emoji="&#127919;"
 						position="Marketing Assistant"
-						company="ManpowerGroup Portugal"
+						company="Manpower Group Portugal"
 						time="jan 2021 - set 2022"
 						address="Lisbon, Portugal"
 						work="As a Marketing Assistant, I support various marketing initiatives, such as creating content, coordinating events, managing social media, and assisting with market research. My goal is to contribute to the company's brand awareness and help drive business growth through effective marketing strategies."

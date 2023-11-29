@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: [
-		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./app/**/*.{js,ts,jsx,tsx,mdx}",
-	],
+	content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
 	darkMode: "class",
+	screens: {
+		sm: "475px",
+		// => @media (min-width: 640px) { ... }
+		md: "768px",
+		// => @media (min-width: 768px) { ... }
+		lg: "1024px",
+		// => @media (min-width: 1024px) { ... }
+		xl: "1280px",
+		// => @media (min-width: 1280px) { ... }
+		"2xl": "1536px",
+		// => @media (min-width: 1536px) { ... }
+	},
 	theme: {
 		extend: {
 			animation: {
@@ -22,25 +30,6 @@ module.exports = {
 				primaryDark: "#3FA5F3",
 				secondaryDark: "#074473",
 			},
-		},
-		screens: {
-			"2xl": { max: "1535px" },
-			// => @media (max-width: 1535px) { ... }
-
-			xl: { max: "1279px" },
-			// => @media (max-width: 1279px) { ... }
-
-			lg: { max: "1023px" },
-			// => @media (max-width: 1023px) { ... }
-
-			md: { max: "767px" },
-			// => @media (max-width: 767px) { ... }
-
-			sm: { max: "639px" },
-			// => @media (max-width: 639px) { ... }
-
-			xs: { max: "479px" },
-			// => @media (max-width: 479px) { ... }
 		},
 	},
 	plugins: [],

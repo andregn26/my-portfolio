@@ -16,11 +16,11 @@ const Card = ({ setSelected, item }) => {
 				<motion.img
 					layoutId={`card-${item.id}`}
 					src={item.url}
-					className="w-full shadow-xl image-full cursor-pointer bg-light dark:bg-dark rounded-t-md border border-solid border-transparent dark:border-light/50  border-b-0"
+					className="w-full shadow-xl image-full cursor-pointer bg-light rounded-t-md border border-solid border-transparent  border-b-0"
 				/>
-				<div className="flex flex-wrap mt-0 px-2  py-3 border border-solid border-transparent dark:border-light/50 rounded-b-md border-t-0">
-					<IoLocation className="dark:text-dark mr-1" />
-					<h5 className="text-xs font-medium dark:text-light"> {item.location}</h5>
+				<div className="flex flex-wrap mt-0 px-2 py-3 border border-solid border-transparent rounded-b-md border-t-0">
+					<IoLocation className=" mr-1" />
+					<h5 className="text-xs font-medium"> {item.location}</h5>
 				</div>
 			</div>
 		</motion.div>
@@ -30,7 +30,7 @@ const Card = ({ setSelected, item }) => {
 const PhotoList = ({ setSelected }) => {
 	return (
 		<div>
-			<div className="columns-4 lg:columns-3 sm:columns-2  gap-4">
+			<div className="columns-2 lg:columns-3 xl:columns-4 gap-4">
 				{items.map((item) => (
 					<Card key={item.id} setSelected={setSelected} item={item} />
 				))}

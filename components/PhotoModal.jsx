@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { IoLocation } from "react-icons/io5";
 
@@ -12,9 +11,7 @@ const PhotoModal = ({ selected, setSelected }) => {
 		<div
 			onClick={() => setSelected(null)}
 			className="fixed inset-0 bg-dark/90 z-20 cursor-pointer overflow-y-scroll no-scrollbar">
-			<div
-				onClick={(e) => e.stopPropagation()}
-				className="w-full max-w-[700px] mx-auto mt-32 mb-8 px-8 cursor-default">
+			<div onClick={(e) => e.stopPropagation()} className="w-full max-w-[700px] mx-auto mt-32 mb-8 px-8 cursor-default">
 				<motion.div layoutId={`card-${selected.id}`}>
 					<img className="rounded-t-md" src={selected.url} />
 				</motion.div>

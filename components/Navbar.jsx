@@ -15,20 +15,14 @@ const ThemeButton = ({ mode, setMode }) => {
 		<button
 			className="flex items-center justify-center rounded-full p-1 w-8 h-auto"
 			onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-			{mode === "dark" ? (
-				<SunIcon className={"fill-dark"} />
-			) : (
-				<MoonIcon className={"fill-dark"} />
-			)}
+			{mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />}
 		</button>
 	);
 };
 
 const MenuIcon = ({ handleClickMenu, isOpen }) => {
 	return (
-		<button
-			className=" flex-col justify-center items-center hidden lg:flex"
-			onClick={handleClickMenu}>
+		<button className=" flex-col justify-center items-center lg:hidden flex" onClick={handleClickMenu}>
 			<span
 				className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm ${
 					isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
@@ -125,11 +119,7 @@ const NavlinksMobile = ({ handleClickMenu, className = "" }) => {
 		<nav className={`${className} flex items-center flex-col justify-center`}>
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/" title="Home" />
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/about" title="About" />
-			<CustomMobileLink
-				toggleMenu={handleClickMenu}
-				href="/photography"
-				title="Photography"
-			/>
+			<CustomMobileLink toggleMenu={handleClickMenu} href="/photography" title="Photography" />
 			<CustomMobileLink toggleMenu={handleClickMenu} href="/projects" title="Web" />
 			<div className="flex items-center gap-2">
 				<CustomMobileLink
@@ -165,10 +155,10 @@ export const Navbar = ({ className = "" }) => {
 
 					{/* CENTER */}
 
-					<NavlinksDesktop className="bg-light/90 dark:bg-dark/95 border border-1 border-transparent dark:border-light/50 shadow-lg rounded-md px-10 py-4 flex z-10 right-[50%] translate-x-[50%] fixed justify-center lg:hidden" />
+					<NavlinksDesktop className="bg-light/90 dark:bg-dark/95 border border-1 border-transparent dark:border-light/50 shadow-lg rounded-md px-10 py-4 lg:flex z-10 right-[50%] translate-x-[50%] fixed justify-center hidden" />
 
 					{/* RIGHT SIDE */}
-					<div className="flex justify-end items-center lg:hidden content-end">
+					<div className="md:flex justify-end items-center hidden content-end">
 						{/* SOCIAL MEDIA NAVIGATION & THEME SWITCHER */}
 						<nav className="flex items-center justify-center flex-wrap gap-2">
 							<SocialMediaIcon href="https://www.linkedin.com/in/andrengregorio">

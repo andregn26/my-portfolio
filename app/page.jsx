@@ -15,19 +15,19 @@ export const metadata = {
 export default function Home() {
 	return (
 		<>
-			<TransitionEffect />
+			{/* <TransitionEffect /> */}
 			{/* MAIN CONTAINER */}
-			<div className=" flex min-h-[calc(100vh-64px)] items-center justify-center w-full  lg:flex-col ">
+			<div className="main-container flex gap-12 xl:gap-24 min-h-[calc(100vh-64px)] items-center justify-center ">
 				{/* IMAGE CONTAINER */}
-				<div className="w-1/2 md:w-full">
+				<div className="hidden lg:flex w-1/2 max-w-[500px] flex-col items-center">
 					<Image
 						priority="true"
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
 						src={profilePic}
 						alt="andre_gregorio_profile_pic"
-						className="w-[80%] h-auto lg:hidden md:inline-block md:w-full"
+						className="h-auto md:inline-block md:w-full"
 					/>
-					<div className="w-[80%] md:w-full lg:hidden">
+					<div className="w-[80%] md:w-full md:inline-block">
 						<h4 className="text-right text-sm font-normal italic">
 							My portrait by the eyes of Henri Rousseau
 						</h4>
@@ -37,27 +37,24 @@ export default function Home() {
 					</div>
 				</div>
 				{/* TEXT CONTAINER */}
-				<div className="w-1/2 flex flex-col items-center  self-center lg:w-full">
+				<div className=" flex flex-col items-center w-full md:w-1/2  self-center">
 					<AnimatedText
-						fontClass="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl !leading-[1.1]"
+						fontClass=" lg:!text-left !text-4xl md:!text-5xl xl:!text-6xl !leading-[1.1]"
 						dimensionsClass=""
 						text="Journey into the World of a Web Developer."
 					/>
-					<p className="my-4 text-base font-medium md:text-sm sm:text-xs lg:text-center">
-						As a front-end developer, I am committed to turn ideas into beautiful and
-						user-friendly web applications. Get to know a little more about me and feel
-						free to explore my latest projects, showcasing my expertise in React.js.
+					<p className="my-4 font-medium text-xs md:text-base text-center lg:text-left">
+						As a front-end developer, I am committed to turn ideas into beautiful and user-friendly web
+						applications. Get to know a little more about me and feel free to explore my latest
+						projects, showcasing my expertise in React.js.
 					</p>
-					<div className="flex items-center self-start mt-2 lg:self-center">
+					<div className="flex  items-center  mt-2 self-center lg:self-start">
 						<Link
 							href="cv\CV-andre-gregorio.pdf"
 							target="_blank"
 							className="flex items-center
-							bg-dark hover:bg-light dark:bg-light dark:hover:bg-dark
-							text-light hover:text-dark dark:text-black dark:hover:text-light text-lg font-semibold
-							p-2.5 px-6 rounded-lg
-							border-2 border-solid border-transparent hover:border-dark dark:hover:border-light/50
-							md:p-2 md:px-4 md:text-base"
+							bg-dark hover:bg-light text-light hover:text-dark md:text-lg font-semibold
+							md:p-2.5 md:px-6 rounded-lg	border-2 border-solid border-transparent hover:border-dark	p-2 px-4 text-base"
 							download={true}>
 							Resume
 							<div className="w-6 h-auto">
