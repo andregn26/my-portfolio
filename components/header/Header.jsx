@@ -11,11 +11,11 @@ const Header = () => {
 	};
 
 	return (
-		<div className="absolute top-0 left-0 w-full">
-			<div className="lg:hidden flex justify-center mt-4 ">
+		<div className="absolute z-10 top-0 left-0 w-full">
+			<div className="lg:hidden flex justify-center">
 				<NavbarMobile handleClickMenu={handleClickMenu} isOpen={isOpen} />
 			</div>
-			<div className="hidden lg:flex justify-center mt-4">
+			<div className="hidden lg:flex justify-center">
 				<NavbarDesktop />
 			</div>
 		</div>

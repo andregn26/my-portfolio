@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../Logo";
+import Logo from "../../old/Logo";
 import { MenuIcon } from "../../icons/MenuIcon";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -32,7 +32,7 @@ const NavbarMobile = ({ handleClickMenu, isOpen }) => {
 	};
 	return (
 		<>
-			<div className="flex justify-between fixed z-10  gap-2 bg-white/60 shadow-inner rounded-lg backdrop-blur-md w-[90%] px-8 py-4">
+			<div className="flex justify-between fixed  gap-2 bg-white/20 shadow-inner  backdrop-blur-md w-full px-8 py-4">
 				<Logo />
 				<MenuIcon handleClickMenu={handleClickMenu} isOpen={isOpen} />
 			</div>
@@ -52,9 +52,6 @@ const NavbarMobile = ({ handleClickMenu, isOpen }) => {
 					animate={{ scale: 1, opacity: 1 }}
 					className="bg-slate-900/80 backdrop-blur-md border-2 min-w-[70vw] rounded-lg py-32 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30">
 					<nav className={`flex items-center flex-col justify-center`}>
-						<CustomMobileLink toggleMenu={handleClickMenu} href="/" title="Home" />
-						<CustomMobileLink toggleMenu={handleClickMenu} href="/about" title="About" />
-						<CustomMobileLink toggleMenu={handleClickMenu} href="/photography" title="Photography" />
 						<CustomMobileLink toggleMenu={handleClickMenu} href="/projects" title="Web" />
 					</nav>
 				</motion.div>

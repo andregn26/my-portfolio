@@ -17,6 +17,10 @@
     }
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 .border-red {
   border: 1px solid red
 }
