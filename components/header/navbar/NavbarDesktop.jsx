@@ -24,7 +24,7 @@ const NavbarDesktop = () => {
 		<div className="flex justify-between fixed  gap-2 bg-white/20 shadow-inner  backdrop-blur-md w-full px-8 py-4">
 			<Logo />
 			<nav className="relative">
-				<CustomLink href="/projects" title="Web" className="ml-4" />
+				<CustomLink href="/#projects" title="Projects" className="ml-4" />
 			</nav>
 		</div>
 	);

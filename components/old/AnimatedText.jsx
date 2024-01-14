@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const quote = {
+export const quote = {
 	initial: {
 		opacity: 1,
 	},
@@ -14,7 +14,7 @@ const quote = {
 	},
 };
 
-const singleWord = {
+export const singleWord = {
 	initial: {
 		opacity: 0,
 		y: 50,
