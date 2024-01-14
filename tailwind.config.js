@@ -23,14 +23,38 @@ module.exports = {
 				mont: ["var(--font-mont)"],
 			},
 			colors: {
-				dark: "#1b1b1b",
-				light: "#f5f5f5",
-				primary: "#DA7B07",
-				secondary: "#FDDAB0",
-				primaryDark: "#3FA5F3",
-				secondaryDark: "#074473",
+				dark: "#131313",
+				light: "#FAFAFA",
+				primary: "#F91306",
+				secondary: "#EFE6D5",
+				terciary: "rgb(131,140,125)",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("daisyui")],
+	daisyui: {
+		themes: [
+			{
+				mytheme: {
+					primary: "#F91306",
+
+					secondary: "#EFE6D5",
+
+					accent: "rgb(131,140,125)",
+
+					neutral: "#131313",
+
+					"base-100": "#FAFAFA",
+
+					info: "#26cdff",
+
+					success: "#00cf6b",
+
+					warning: "#ff7b00",
+
+					error: "#ff0069",
+				},
+			},
+		],
+	},
 };

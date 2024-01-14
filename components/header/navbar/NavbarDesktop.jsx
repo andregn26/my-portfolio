@@ -1,4 +1,4 @@
-import Logo from "@/components/Logo";
+import Logo from "@/components/old/Logo";
 import React from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -21,13 +21,10 @@ const NavbarDesktop = () => {
 	};
 
 	return (
-		<div className="flex justify-between fixed z-10  gap-2 bg-white/60 shadow-inner rounded-lg backdrop-blur-md w-[90%] px-8 py-4">
+		<div className="flex justify-between fixed  gap-2 bg-white/20 shadow-inner  backdrop-blur-md w-full px-8 py-4">
 			<Logo />
 			<nav className="relative">
-				<CustomLink href="/" title="Home" className="mr-4" />
-				<CustomLink href="/about" title="About" className="mx-4" />
-				<CustomLink href="/photography" title="Photography" className="mx-4" />
-				<CustomLink href="/projects" title="Web" className="ml-4" />
+				<CustomLink href="/#projects" title="Projects" className="ml-4" />
 			</nav>
 		</div>
 	);

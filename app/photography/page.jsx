@@ -1,7 +1,7 @@
-import TransitionEffect from "@/components/TransitionEffect";
+import TransitionEffect from "@/components/old/TransitionEffect";
 import React from "react";
-import AnimatedText from "@/components/AnimatedText";
-import Photography from "@/components/Photography";
+import AnimatedText from "@/components/old/AnimatedText";
+import Photography from "@/components/old/Photography";
 
 const page = () => {
 	return (
