@@ -1,8 +1,8 @@
 "use client";
 
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "@/components/old/AnimatedText";
 import React, { useState, useCallback } from "react";
-import { LinkArrow } from "@/components/Icons";
+import { LinkArrow } from "@/components/old/Icons";
 import { projects } from "@/data";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineStatusOnline } from "react-icons/hi";
