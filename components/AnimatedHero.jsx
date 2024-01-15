@@ -19,11 +19,11 @@ const AnimatedHero = () => {
 				I create and develop applications, handling every aspect of the process.
 			</h2>
 			<div className="gap-4 flex mt-6">
-				<a className="btn btn-sm text-xs" href="">
+				<a className="btn btn-sm text-xs" href="https://github.com/andregn26" target="_blank">
 					<GithubIcon className={"!w-4 !h-4"} />
 					Github
 				</a>
-				<a className="btn btn-sm text-xs" href="">
+				<a className="btn btn-sm text-xs" href="https://www.linkedin.com/in/andrengregorio/" target="_blank">
 					<LinkedInIcon className={"!w-4 !h-4 "} />
 					LinkedIn
 				</a>

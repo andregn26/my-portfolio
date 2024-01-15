@@ -11,3 +11,19 @@ export async function getAllProjects() {
 		"image": image.asset->url,
 	  }`);
 }
+
+export async function getProject(slug) {
+	return client.fetch(
+		groq`*[_type == "project" && slug.current == $slug][0]{
+			_id,
+			name,
+			"slug": slug.current,
+			links,
+			image,
+			longDescription,
+			stack,
+			features,
+	  }`,
+		{ slug }
+	);
+}
