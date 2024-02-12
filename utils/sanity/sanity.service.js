@@ -23,6 +23,7 @@ export async function getProject(slug) {
 			longDescription,
 			stack,
 			features,
+			motivation
 	  }`,
 		{ slug }
 	);

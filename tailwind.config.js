@@ -42,6 +42,8 @@ module.exports = {
 
 					accent: "rgb(131,140,125)",
 
+					"accent-content": "#464d42",
+
 					neutral: "#131313",
 
 					"base-100": "#FAFAFA",

@@ -76,6 +76,15 @@ const project = {
 			// validation: (Rule) =>
 			// 	Rule.max(400).error("Shorter titles are usually better"),
 		},
+		//NOTE Motivation
+		{
+			name: "motivation",
+			title: "Motivação",
+			type: "array",
+			of: [{ type: "block" }],
+			// validation: (Rule) =>
+			// 	Rule.max(400).error("Shorter titles are usually better"),
+		},
 		//NOTE Stack
 		{
 			name: "stack",

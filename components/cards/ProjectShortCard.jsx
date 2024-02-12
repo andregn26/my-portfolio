@@ -18,12 +18,7 @@ const ProjectShortCard = ({ project }) => {
 		<div className="bg-secondary/40 rounded-lg border border-solid border-white max-w-[300px] h-[300px] flex flex-col ">
 			<Link href={slug}>
 				<figure className="relative w-full pt-4 px-4  ">
-					<Image
-						src={useImageUrlBuilder(image).url()}
-						height={200}
-						width={300}
-						className="object-contain rounded-md"
-					/>
+					<Image src={useImageUrlBuilder(image).url()} height={200} width={300} className="object-contain rounded-md" />
 				</figure>
 			</Link>
 			<div className="px-4 pt-6 pb-4">
@@ -36,9 +31,11 @@ const ProjectShortCard = ({ project }) => {
 						<a href={github} target="_blank">
 							<GithubIcon className={"!w-4 !h-4"} />
 						</a>
-						<a href={live} target="_blank">
-							<HiOutlineStatusOnline />
-						</a>
+						{live ? (
+							<a href={live} target="_blank">
+								<HiOutlineStatusOnline />
+							</a>
+						) : null}
 					</div>
 				</div>
 
